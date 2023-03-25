@@ -1,0 +1,68 @@
+body {
+  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  margin-right: 1rem;
+}
+
+main {
+  text-align: left;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #335d92;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.1;
+  margin: 4rem auto;
+  max-width: 14rem;
+}
+
+p {
+  max-width: 14rem;
+  margin: 2rem auto;
+  line-height: 1.35;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    max-width: none;
+  }
+
+  p {
+    max-width: none;
+  }
+}
+
+.css-code {
+  font-weight: 400;
+-webkit-font-smoothing: antialiased;
+text-size-adjust: 100%;
+box-sizing: inherit;
+border: 0;
+vertical-align: baseline;
+display: block;
+margin-bottom: 18px!important;
+color: #273d56;
+text-align: left;
+word-spacing: normal;
+word-break: normal;
+word-wrap: normal;
+tab-size: 4;
+hyphens: none;
+margin: .5em 0;
+font-family: 'Menlo','Bitstream Vera Sans Mono','Monaco','Consolas',monospace;
+white-space: pre-wrap;
+font-size: 90%;
+line-height: 1.5em;
+background: rgba(31,51,73,.05);
+border-radius: 3px;
+padding: 12px;
+max-height: 300px;
+overflow: auto;
+}
