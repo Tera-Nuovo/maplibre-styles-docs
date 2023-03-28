@@ -1,5 +1,5 @@
-import { SolidMd } from "../utils/SolidMd";
-import CodeBlock from "../utils/CodeBlock";
+import { SolidMd } from "~/utils/SolidMd";
+import CodeBlock from "~/utils/CodeBlock";
 
 
 

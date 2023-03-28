@@ -12,6 +12,8 @@ import {
   Scripts,
   Title,
 } from "solid-start";
+import { Sidebar } from "./components/Sidebar/sidebar";
+import { Header } from "./components/Header/Header";
 import "./root.css";
 
 export default function Root() {
@@ -25,6 +27,8 @@ export default function Root() {
       <Body>
         <Suspense>
           <main>
+           <Header />
+            <Sidebar/>
           <ErrorBoundary>
             <Routes>
               <FileRoutes />

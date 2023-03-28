@@ -1,5 +1,5 @@
-import { SolidMd } from "../utils/SolidMd";
-import CodeBlock from "../utils/CodeBlock";
+import { SolidMd } from "~/utils/SolidMd";
+import CodeBlock from "~/utils/CodeBlock";
 
 function glyphs() {
     const md1 = `A style's \`glyphs\` property provides a URL template for loading signed-distance-field glyph sets in PBF format.`;

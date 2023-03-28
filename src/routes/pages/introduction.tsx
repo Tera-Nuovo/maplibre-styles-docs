@@ -1,4 +1,4 @@
-import { SolidMd } from "../utils/SolidMd";
+import { SolidMd } from "~/utils/SolidMd";
 
 const md = `# Introduction
 

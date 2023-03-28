@@ -1,10 +1,12 @@
-import { Title } from "solid-start";
+import { Head, Title } from "solid-start";
 import CodeBlock from "~/utils/CodeBlock";
 import { SolidMd } from "~/utils/SolidMd";
 import { Header } from "~/components/Header/Header";
-import { Sidebar } from "~/components/Sidebar/Sidebar";
+import { Sidebar } from "~/components/Sidebar/sidebar";
+import { ArticleHead } from "~/components/ArticleHead/ArticleHead";
 
-function Home() {
+
+function Test() {
   
   const code = `The \`color\` type is a color in the [sRGB color space](https://en.wikipedia.org/wiki/SRGB). Colors are JSON strings in a variety of permitted formats: HTML-style hex values, RGB, RGBA, HSL, and HSLA. Predefined HTML colors names, like \`yellow\` and \`blue\`, are also permitted.
 
@@ -29,9 +31,13 @@ function Home() {
 
   return (
     <div>
+        <ArticleHead title="Test"/>
+        <Header />
+        <Sidebar />
+        <SolidMd content={code} />
     </div>
     );
   }
   
-  export default Home;
+  export default Test;
   
