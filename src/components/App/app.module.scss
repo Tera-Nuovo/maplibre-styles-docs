@@ -1,3 +1,18 @@
+// // App.module.scss
+// .container {
+//     display: flex;
+//     min-height: 100vh;
+// }
+
+// .sidebar {
+//     flex: 0 0 auto;
+// }
+
+// .mainContent {
+//     flex: 1;
+//     padding: 1rem;
+// }
+
 // App.module.scss
 .container {
     display: flex;
@@ -6,9 +21,12 @@
 
 .sidebar {
     flex: 0 0 auto;
+    position: sticky;
+    top: 0;
 }
 
 .mainContent {
     flex: 1;
     padding: 1rem;
+    margin-left: 100px; // Add a margin to separate the main content from the sidebar
 }

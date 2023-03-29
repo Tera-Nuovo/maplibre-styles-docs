@@ -13,7 +13,7 @@ type DocItem = {
 };
 
 const docs: DocItem[] = [
-    { title: 'Getting Started', link: '/getting-started' },
+    { title: 'Introduction', link: '/' },
     { title: 'Installation', link: '/installation' },
     { title: 'Configuration', link: '/configuration' },
     { title: 'Components', link: '/components' },

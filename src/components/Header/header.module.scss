@@ -1,11 +1,13 @@
-// Header.module.scss
+@import '/src/_variables.scss';
+
 .header {
     width: 100%;
-    background-color: #000000;
+    background-color: $--background-color;
     // padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    height: $--header-height;
 
     .logoContainer {
         display: flex;
