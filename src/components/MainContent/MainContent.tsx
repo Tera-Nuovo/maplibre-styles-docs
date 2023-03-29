@@ -7,7 +7,7 @@ interface MainContentProps {
 
 export function MainContent(props: MainContentProps) {
     return (
-        <main class={`${style.mainContent} ${props.class}`}>
+        <main class={`${style.mainContentContainer} ${props.class}`}>
             {props.children}
         </main>
     )

@@ -1,7 +1,9 @@
 import { For, Show } from "solid-js";
-// import { style } from "solid-js/web";
 import style from './sidebar.module.scss'
 import { createSignal } from "solid-js";
+import { A, createRouteData, useRouteData } from 'solid-start'
+import { createEffect } from "solid-js";
+import { loadPages } from "../../utils/loadPages";
 
 interface SidebarProps {
     class?: string;
@@ -22,14 +24,22 @@ const docs: DocItem[] = [
 
 export function Sidebar(props: SidebarProps) {
 
+    const [pages, setPages] = createSignal([]);
+
+    createEffect(async () => {
+        const loadedPages: any = await loadPages();
+        setPages(loadedPages);
+    });
 
     return (
         <aside class={`${style.sidebar} ${props.class}`}>
+            <h1 class={style.header}>MapLibre Styles Docs</h1>
+            <hr />
             <div class={style.navItems}>
                 <ul>
-                    {docs.map((doc) => (
+                    {pages().map((page: any) => (
                         <li>
-                            <a href={doc.link}>{doc.title}</a>
+                            <a href={page.link}>{page.title}</a>
                         </li>
                     ))}
                 </ul>
@@ -37,3 +47,23 @@ export function Sidebar(props: SidebarProps) {
         </aside>
     );
 }
+
+// export function Sidebar(props: SidebarProps) {
+
+
+//     return (
+//         <aside class={`${style.sidebar} ${props.class}`}>
+//             <h1 class={style.header}>MapLibre Styles Docs</h1>
+//             <hr />
+//             <div class={style.navItems}>
+//                 <ul>
+//                     {docs.map((doc) => (
+//                         <li>
+//                             <a href={doc.link}>{doc.title}</a>
+//                         </li>
+//                     ))}
+//                 </ul>
+//             </div>
+//         </aside>
+//     );
+// }
