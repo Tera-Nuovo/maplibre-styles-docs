@@ -1,5 +1,20 @@
-.logo{
-    // set size 100 px
-    max-width: 100px;
-    max-height: 100px;
+// Header.module.scss
+.header {
+    width: 100%;
+    background-color: #000000;
+    // padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        .logo {
+            width: auto;
+            height: 30px;
+        }
+    }
 }

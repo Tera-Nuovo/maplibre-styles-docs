@@ -1,37 +1,39 @@
 import { For, Show } from "solid-js";
-import { style } from "solid-js/web";
-import styles from './sidebar.module.scss'
+// import { style } from "solid-js/web";
+import style from './sidebar.module.scss'
+import { createSignal } from "solid-js";
 
+interface SidebarProps {
+    class?: string;
+}
 
+type DocItem = {
+    title: string;
+    link: string;
+};
 
-export function Sidebar() {
-    const pages: any = {
-        'introduction': '/pages/introduction',
-        'Glyphs': '/pages/glyphs',
-        'Types': '/pages/types',
-    }
+const docs: DocItem[] = [
+    { title: 'Getting Started', link: '/getting-started' },
+    { title: 'Installation', link: '/installation' },
+    { title: 'Configuration', link: '/configuration' },
+    { title: 'Components', link: '/components' },
+    { title: 'API', link: '/api' },
+];
+
+export function Sidebar(props: SidebarProps) {
+
 
     return (
-        <nav aria-labelledby="grid-left">
-            <ul class={styles.sidebarGroups}>
-                {
-                    <li>
-                        <div class="nav-group">
-                            <h2 class="no-bullets">Sidebar</h2>
-                            <ul>
-
-                                <For each={Object.keys(pages)}>
-                                    {(page) => (
-                                        <li class={styles.sidebarLink + styles.noBullets}>
-                                            <a href={pages[page]}>{page}</a>
-                                        </li>
-                                    )}
-                                </For>
-                            </ul>
-                        </div>
-                    </li>
-                }
-            </ul>
-        </nav>
-    )
+        <aside class={`${style.sidebar} ${props.class}`}>
+            <div class={style.navItems}>
+                <ul>
+                    {docs.map((doc) => (
+                        <li>
+                            <a href={doc.link}>{doc.title}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </aside>
+    );
 }

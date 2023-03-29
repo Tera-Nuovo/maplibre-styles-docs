@@ -1,0 +1,14 @@
+// App.module.scss
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    flex: 0 0 auto;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 1rem;
+}
