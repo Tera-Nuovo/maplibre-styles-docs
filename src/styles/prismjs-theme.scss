@@ -43,7 +43,7 @@
  /* Inline code */
  :not(pre) > code[class*="language-"] {
 	 padding: .1em;
-	 filter: #{"invert()"};
+	 color: #3c39c7;
 	 background: none;
 
 	 a {
