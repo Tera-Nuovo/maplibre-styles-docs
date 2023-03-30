@@ -1,6 +1,6 @@
 import style from './sidebar.module.scss'
 import './sidebar.css'
-import { A } from 'solid-start'
+import { A, useNavigate } from 'solid-start'
 import { pages } from '~/pages';
 
 interface SidebarProps {
@@ -9,9 +9,10 @@ interface SidebarProps {
 
 export function Sidebar(props: SidebarProps) {
 
+    const navigate = useNavigate();
     return (
         <aside class={`${style.sidebar} ${props.class}`}>
-            <h1 class={style.header}>MapLibre Style Spec</h1>
+            <h1 class={style.header} onclick={()=>{navigate('/')}}>MapLibre Style Spec</h1>
             <hr />
             
             <div class={style.navItems}>
