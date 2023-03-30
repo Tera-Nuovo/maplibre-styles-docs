@@ -24,7 +24,7 @@
     "markdown-it-prism": "^2.3.0",
     "prismjs": "^1.29.0",
     "sass": "^1.60.0",
-    "solid-js": "^1.6.16",
+    "solid-js": "^1.7.0",
     "solid-markdown": "^1.2.1",
     "solid-start": "^0.2.24",
     "solid-start-node": "^0.2.24",
