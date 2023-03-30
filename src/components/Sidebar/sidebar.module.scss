@@ -27,27 +27,21 @@
       margin: 0;
 
       li {
-        margin-bottom: 4px;
-
-        .inactive {
-          color: #007BFF;
-          background-color: black; // Add background color on hover
-        }
 
         a {
           text-decoration: none;
           color: #333;
           font-weight: 500;
-          font-size: 1.1rem; // Increase font size for better readability
+          font-size: 1rem; // Increase font size for better readability
           line-height: 1.4; // Improve line spacing
-          padding: 6px 12px; // Add padding around the link
+          padding: 6px 0px; // Add padding around the link
           border-radius: 4px; // Add border radius to the link
           display: block; // Make the link a block element
 
           &:hover {
-            color: #333;
+            color: #007BFF;
             // color: #007BFF;
-            background-color: #f6f6ff;
+            //background-color: #f6f6ff;
           }
         }
       }
@@ -62,6 +56,7 @@
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
+  font-weight: bold;
   padding: 6px 12px;
   margin: 0;
 }

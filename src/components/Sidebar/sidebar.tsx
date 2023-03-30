@@ -11,8 +11,9 @@ export function Sidebar(props: SidebarProps) {
 
     return (
         <aside class={`${style.sidebar} ${props.class}`}>
-            <h1 class={style.header}>MapLibre Styles Docs</h1>
+            <h1 class={style.header}>MapLibre Style Spec</h1>
             <hr />
+            
             <div class={style.navItems}>
                 <ul>
                     {pages.map((page) => (

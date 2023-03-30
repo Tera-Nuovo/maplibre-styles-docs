@@ -1,7 +1,7 @@
 import { A } from "solid-start";
 import style from './header.module.scss'
 // random image
-const logo = 'https://source.unsplash.com/random';
+const logo = '/public/maplibre-logo-big.svg';
 
 export function Header() {
     return (
@@ -11,6 +11,7 @@ export function Header() {
                     <img src={logo} alt="logo" class={style.logo} />
                 </A>
             </div>
+            
         </header>
     );
 }
