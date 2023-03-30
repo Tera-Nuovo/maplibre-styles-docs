@@ -1,6 +1,7 @@
 import { SolidMd } from "~/utils/SolidMd";
 export const title = "Introduction";
 
+
 const md = `# Introduction
 
 [Changelog](https://github.com/maplibre/maplibre-gl-style-spec/blob/main/CHANGELOG.md)
