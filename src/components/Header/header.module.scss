@@ -12,11 +12,24 @@
     .logoContainer {
         display: flex;
         align-items: center;
+        
         margin-left: 1rem;
 
         .logo {
+            display: block;
             width: auto;
             height: 30px;
         }
     }
 }
+.title {
+
+    width: 100%;
+    background-color: $--background-color;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
