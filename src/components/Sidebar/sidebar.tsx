@@ -1,4 +1,5 @@
 import style from './sidebar.module.scss'
+import './sidebar.css'
 import { A } from 'solid-start'
 import { pages } from '~/pages';
 
@@ -16,7 +17,7 @@ export function Sidebar(props: SidebarProps) {
                 <ul>
                     {pages.map((page) => (
                         <li>
-                            <A end={true} href={page.path}>{page.title}</A>
+                            <A end={true} class="sidebar-link" href={page.path}>{page.title}</A>
                         </li>
                     ))}
                 </ul>
